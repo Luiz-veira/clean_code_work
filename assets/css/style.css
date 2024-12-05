@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-image: url(../assets/codigo-wallpaper.jpg);
+}
+
+main{
+    background-color: #43D8DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 8em;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+a>h1{
+    color: #B90D85;
+    text-decoration: none;
+}
+
+a>h1:hover{
+    color: #520047;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 4em;
+    color: #B90D85;
+}
+
+footer{
+    width: 70vw;
+    height: 2.5em;
+    background-color: #43D8DE;
+    color: #B90D85;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+    border-radius: 1em;
+    font-size: 2em;
+    margin-top: 2em;
+}
