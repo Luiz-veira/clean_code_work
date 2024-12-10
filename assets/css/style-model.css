@@ -7,7 +7,8 @@
     font-family: "Oswald", sans-serif;
 }
 
-body{
+body,
+html{
     background-image: url(./assets/codigos-modulacao.webp);
     background-size: cover;
 }
