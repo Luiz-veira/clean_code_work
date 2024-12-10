@@ -9,7 +9,7 @@
 
 body,
 html{
-    background-image: url(./assets/codigos-modulacao.webp);
+    background-image: url("../codigos-modulacao.webp");
     background-size: cover;
 }
 
