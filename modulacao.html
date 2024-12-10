@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favico-modulação.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style-model.css">
+    <title>Modulação</title>
+</head>
+
+<body>
+    <header>
+        <h1>MODULAÇÃO EM JAVASCRIPT</h1>
+    </header>
+
+    <main>
+        <p>A modulação em JavaScript refere-se à prática de dividir o código em partes menores e reutilizáveis, chamadas
+            de módulos. Essa abordagem melhora a organização, a manutenibilidade e a legibilidade do código, além de
+            facilitar a reutilização de funcionalidades em diferentes partes de uma aplicação.
+            A modulação é uma prática essencial para o desenvolvimento de aplicações modernas em JavaScript,
+            principalmente em projetos grandes e complexos. Com o suporte nativo a módulos via ES6 e a popularidade de
+            padrões como CommonJS no Node.js, os desenvolvedores têm ferramentas poderosas para organizar e estruturar o
+            código de maneira eficiente.
+        </p>
+
+        <article class="model">
+            <h2>Por que usar módulos</h2>
+
+            <p>Tradicionalmente, em JavaScript, o código era mantido em grandes arquivos monolíticos, o que dificultava
+                a manutenção e aumentava a complexidade em projetos maiores. Com a modulação, podemos:
+            </p>
+
+            <ul>
+                <li>
+                    Organizar o código de forma lógica.
+                </li>
+
+                <li>
+                    Evitar a duplicação de código.
+                </li>
+
+                <li>
+                    Isolar funcionalidades, limitando o impacto de mudanças em uma parte do código no restante da
+                    aplicação.
+                </li>
+
+                <li>
+                    Facilitar o teste de componentes individuais.
+                </li>
+            </ul>
+        </article>
+
+        <article class="modulacao">
+            <h2>Sintaxe de Módulos</h2>
+            <p>
+                Existem diversas maneiras de trabalhar com módulos em JavaScript, permitindo uma melhor organização e
+                reutilização de código em aplicações de diferentes tamanhos. Com a introdução do ES6 (ECMAScript 2015),
+                o JavaScript passou a oferecer suporte nativo para módulos, proporcionando uma forma mais clara e
+                estruturada de separar funcionalidades. Agora, é possível dividir o código em diferentes arquivos e
+                utilizar as instruções import e export para compartilhar ou acessar variáveis, funções e classes entre
+                eles. Esse novo padrão nativo de módulos traz mais flexibilidade ao desenvolvimento, reduz a
+                complexidade de dependências e facilita a manutenção do código, especialmente em projetos maiores.
+            </p>
+
+            <section class="export">
+                <h3>Exportação de Módulos</h3>
+                <p>O primeiro passo para modularizar seu código é exportar as partes que deseja tornar acessíveis a
+                    outros arquivos ou partes da aplicação. Existem dois tipos principais de exportações:
+                </p>
+
+                <ol>
+
+                    <li>
+                        <h5>Exportação Nomeada:</h5>
+                        <p>
+                            Permite exportar várias funções, variáveis <br> ou classes de um mesmo módulo.
+                        </p>
+                        <img src="./assets/export-nomeado.png" alt="">
+                    </li>
+
+
+                    <li>
+                        <h5>Exportação Padrão:</h5>
+                        <p>
+                            Permite exportar apenas um valor por módulo, mas de forma simplificada.
+                            javascript
+                        </p>
+                        <img src="./assets/export-padrao.png" alt="">
+                    </li>
+
+                </ol>
+            </section>
+
+            <section class="import">
+                <h3>Importação de Módulos</h3>
+                <p>
+                    Para usar um módulo exportado em outro arquivo, você utiliza o comando import. Se o módulo foi
+                    exportado com exportação nomeada, é necessário usar as chaves {}
+                </p>
+
+                <ol>
+
+                    <li>
+                        <h5>Importação Nomeada:</h5>
+                        <p>
+                            Quando você deseja importar partes específicas de um módulo
+                        </p>
+                        <img src="./assets/import-nomeada.png" alt="">
+                    </li>
+
+                    <li>
+                        <h5>Importação Padrão:</h5>
+                        <p>
+                            Quando você importa o módulo padrão de um arquivo.
+                        </p>
+                        <img src="./assets/import-padrao.png" alt="">
+                    </li>
+
+                </ol>
+            </section>
+        </article>
+
+        <article class="comando">
+            <div class="console">
+                <h2>Módulos com CommonJS (Node.js)</h2>
+                <p>
+                    Antes do suporte nativo a módulos no ES6, o Node.js popularizou o uso de módulos através do padrão
+                    CommonJS, que ainda é amplamente utilizado. Nesse padrão, utilizamos module.exports para exportar e
+                    require para importar módulos. CommonJS foi e ainda é uma parte crucial do ecossistema JavaScript,
+                    especialmente no desenvolvimento com Node.js. Ele fornece uma maneira robusta e fácil de organizar e
+                    reutilizar código, mas com a adoção cada vez maior dos ES Modules (ESM), é provável que o uso de
+                    CommonJS diminua em aplicações modernas de front-end e back-end.
+                </p>
+            </div>
+            <img src="./assets/commonjs.png" alt="">
+        </article>
+
+        <article class="beneficio">
+            <h2>Vantagens da Modulação</h2>
+
+            <div class="conteudo">
+
+                <div class="topico1">
+                    <img src="./assets/manutencao-simples.png" alt="">
+                    <h3>Manutenção Simples: </h3>
+                    <p>
+                        Alterações em um módulo geralmente não afetam outras partes da aplicação, desde que sua
+                        interface
+                        (exports) permaneça a mesma.
+                    </p>
+                </div>
+
+                <div class="topico2">
+                    <img src="./assets/testabilidade.png" alt="">
+                    <h3>Testabilidade:</h3>
+                    <p>
+                        Testar módulos individuais é mais fácil do que testar grandes blocos de código.
+                    </p>
+                </div>
+
+                <div class="topico3">
+                    <img src="./assets/reutilizacao.png" alt="">
+                    <h3>Reutilização:</h3>
+                    <p>
+                        Módulos podem ser reutilizados em diferentes partes do projeto ou mesmo em projetos diferentes.
+                    </p>
+                </div>
+
+            </div>
+
+        </article>
+
+        <button><a href="https://youtu.be/0uUWr7qeIn8?si=M_7LotUELhXLVXqO" target="_blank">Saiba mais...</a></button>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Luiz Fernando de Oliveira - 2024</p>
+    </footer>
+</body>
+
+</html>
